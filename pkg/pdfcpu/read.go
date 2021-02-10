@@ -1277,6 +1277,10 @@ func readXRefTable(ctx *Context) (err error) {
 	// Note: Acrobat 6.0 and later do not use the free list to recycle object numbers.
 	err = ctx.EnsureValidFreeList()
 	if err != nil {
+		if ctx.Configuration.ValidationMode == ValidationRelaxed {
+			log.Read.Printf("EnsureValidFreeList failed: %s, but skipping due to relaxed validation\n", err)
+			return nil
+		}
 		return
 	}
 
@@ -2339,7 +2343,11 @@ func dereferenceObjects(ctx *Context) error {
 	for _, objNr := range keys {
 		err := dereferenceObject(ctx, objNr)
 		if err != nil {
-			return err
+			log.Read.Printf("failed to deference object: %s\n", err)
+			err = xRefTable.DeleteObject(objNr)
+			if err != nil {
+				log.Read.Printf("failed to delete object: %s\n", err)
+			}
 		}
 	}
 

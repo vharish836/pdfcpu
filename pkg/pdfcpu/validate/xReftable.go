@@ -31,19 +31,19 @@ func XRefTable(xRefTable *pdf.XRefTable) error {
 
 	// Validate root object(aka the document catalog) and page tree.
 	err := validateRootObject(xRefTable)
-	if err != nil {
+	if err != nil && xRefTable.ValidationMode != pdf.ValidationRelaxed {
 		return err
 	}
 
 	// Validate document information dictionary.
 	err = validateDocumentInfoObject(xRefTable)
-	if err != nil {
+	if err != nil && xRefTable.ValidationMode != pdf.ValidationRelaxed {
 		return err
 	}
 
 	// Validate offspec additional streams as declared in pdf trailer.
 	err = validateAdditionalStreams(xRefTable)
-	if err != nil {
+	if err != nil && xRefTable.ValidationMode != pdf.ValidationRelaxed {
 		return err
 	}
 
@@ -907,6 +907,9 @@ func validateRootObject(xRefTable *pdf.XRefTable) error {
 
 	if err == nil {
 		log.Validate.Println("*** validateRootObject end ***")
+	} else if xRefTable.ValidationMode == pdf.ValidationRelaxed {
+		log.Validate.Printf("validatePagesAnnotations failed: %s, but skipping due to relaxed validation\n", err)
+		return nil
 	}
 
 	return err
