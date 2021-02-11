@@ -23,8 +23,8 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/pdfcpu/pdfcpu/pkg/types"
 	"github.com/pkg/errors"
+	"github.com/vharish836/pdfcpu/pkg/types"
 )
 
 type importParamMap map[string]func(string, *Import) error

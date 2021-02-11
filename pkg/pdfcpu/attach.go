@@ -22,9 +22,9 @@ import (
 	"io"
 	"time"
 
-	"github.com/pdfcpu/pdfcpu/pkg/filter"
-	"github.com/pdfcpu/pdfcpu/pkg/log"
 	"github.com/pkg/errors"
+	"github.com/vharish836/pdfcpu/pkg/filter"
+	"github.com/vharish836/pdfcpu/pkg/log"
 )
 
 func decodeFileSpecStreamDict(sd *StreamDict, id string) error {

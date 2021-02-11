@@ -21,8 +21,8 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/pdfcpu/pdfcpu/pkg/log"
 	"github.com/pkg/errors"
+	"github.com/vharish836/pdfcpu/pkg/log"
 )
 
 // Mark all content streams for a page dictionary (for stats).

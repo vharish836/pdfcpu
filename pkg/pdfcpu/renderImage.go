@@ -25,9 +25,9 @@ import (
 	"os"
 
 	"github.com/hhrutter/tiff"
-	"github.com/pdfcpu/pdfcpu/pkg/filter"
-	"github.com/pdfcpu/pdfcpu/pkg/log"
 	"github.com/pkg/errors"
+	"github.com/vharish836/pdfcpu/pkg/filter"
+	"github.com/vharish836/pdfcpu/pkg/log"
 )
 
 // Errors to be identified.

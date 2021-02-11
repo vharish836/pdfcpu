@@ -22,8 +22,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/pdfcpu/pdfcpu/pkg/api"
-	"github.com/pdfcpu/pdfcpu/pkg/pdfcpu"
+	"github.com/vharish836/pdfcpu/pkg/api"
+	"github.com/vharish836/pdfcpu/pkg/pdfcpu"
 )
 
 func testNUp(t *testing.T, msg string, inFiles []string, outFile string, selectedPages []string, desc string, n int, isImg bool) {

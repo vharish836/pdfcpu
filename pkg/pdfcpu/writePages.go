@@ -17,8 +17,8 @@ limitations under the License.
 package pdfcpu
 
 import (
-	"github.com/pdfcpu/pdfcpu/pkg/log"
 	"github.com/pkg/errors"
+	"github.com/vharish836/pdfcpu/pkg/log"
 )
 
 // Write page entry to disk.

@@ -26,8 +26,8 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/pdfcpu/pdfcpu/pkg/log"
 	"github.com/pkg/errors"
+	"github.com/vharish836/pdfcpu/pkg/log"
 )
 
 // Write generates a PDF file for the cross reference table contained in Context.

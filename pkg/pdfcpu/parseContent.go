@@ -20,8 +20,8 @@ import (
 	"strings"
 	"unicode"
 
-	"github.com/pdfcpu/pdfcpu/pkg/log"
 	"github.com/pkg/errors"
+	"github.com/vharish836/pdfcpu/pkg/log"
 )
 
 var (

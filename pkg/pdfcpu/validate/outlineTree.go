@@ -17,8 +17,8 @@ limitations under the License.
 package validate
 
 import (
-	pdf "github.com/pdfcpu/pdfcpu/pkg/pdfcpu"
 	"github.com/pkg/errors"
+	pdf "github.com/vharish836/pdfcpu/pkg/pdfcpu"
 )
 
 func validateOutlineItemDict(xRefTable *pdf.XRefTable, d pdf.Dict) error {

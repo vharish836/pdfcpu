@@ -30,10 +30,10 @@ import (
 	"strings"
 	"unicode/utf16"
 
-	"github.com/pdfcpu/pdfcpu/pkg/filter"
-	"github.com/pdfcpu/pdfcpu/pkg/font"
-	"github.com/pdfcpu/pdfcpu/pkg/log"
-	"github.com/pdfcpu/pdfcpu/pkg/types"
+	"github.com/vharish836/pdfcpu/pkg/filter"
+	"github.com/vharish836/pdfcpu/pkg/font"
+	"github.com/vharish836/pdfcpu/pkg/log"
+	"github.com/vharish836/pdfcpu/pkg/types"
 
 	"github.com/pkg/errors"
 )

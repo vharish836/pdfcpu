@@ -21,9 +21,9 @@ import (
 	"os"
 	"time"
 
-	"github.com/pdfcpu/pdfcpu/pkg/log"
-	"github.com/pdfcpu/pdfcpu/pkg/pdfcpu"
 	"github.com/pkg/errors"
+	"github.com/vharish836/pdfcpu/pkg/log"
+	"github.com/vharish836/pdfcpu/pkg/pdfcpu"
 )
 
 // InsertPages inserts a blank page before or after every page selected of rs and writes the result to w.

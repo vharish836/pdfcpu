@@ -17,8 +17,8 @@ limitations under the License.
 package validate
 
 import (
-	pdf "github.com/pdfcpu/pdfcpu/pkg/pdfcpu"
 	"github.com/pkg/errors"
+	pdf "github.com/vharish836/pdfcpu/pkg/pdfcpu"
 )
 
 func validateOptionalContentGroupIntent(xRefTable *pdf.XRefTable, d pdf.Dict, dictName, entryName string, required bool, sinceVersion pdf.Version) error {

@@ -1,11 +1,11 @@
 # pdfcpu: a Go PDF processor
 
-[![Test](https://github.com/pdfcpu/pdfcpu/workflows/Test/badge.svg)](https://github.com/pdfcpu/pdfcpu/actions)
+[![Test](https://github.com/vharish836/pdfcpu/workflows/Test/badge.svg)](https://github.com/vharish836/pdfcpu/actions)
 [![Coverage Status](https://coveralls.io/repos/github/pdfcpu/pdfcpu/badge.svg?branch=master)](https://coveralls.io/github/pdfcpu/pdfcpu?branch=master)
-[![GoDoc](https://godoc.org/github.com/pdfcpu/pdfcpu?status.svg)](https://pkg.go.dev/github.com/pdfcpu/pdfcpu)
-[![Go Report Card](https://goreportcard.com/badge/github.com/pdfcpu/pdfcpu)](https://goreportcard.com/report/github.com/pdfcpu/pdfcpu)
+[![GoDoc](https://godoc.org/github.com/vharish836/pdfcpu?status.svg)](https://pkg.go.dev/github.com/vharish836/pdfcpu)
+[![Go Report Card](https://goreportcard.com/badge/github.com/vharish836/pdfcpu)](https://goreportcard.com/report/github.com/vharish836/pdfcpu)
 [![Hex.pm](https://img.shields.io/hexpm/l/plug.svg)](https://opensource.org/licenses/Apache-2.0)
-[![Latest release](https://img.shields.io/github/release/pdfcpu/pdfcpu.svg)](https://github.com/pdfcpu/pdfcpu/releases)
+[![Latest release](https://img.shields.io/github/release/pdfcpu/pdfcpu.svg)](https://github.com/vharish836/pdfcpu/releases)
 
 <img src="resources/logoSmall.png" width="150">
 
@@ -68,13 +68,13 @@ The main focus lies on strong support for batch processing and scripting via a r
 
 * The main entry point is [pdfcpu.io](https://pdfcpu.io).
 * For CLI examples also go to [pdfcpu.io](https://pdfcpu.io). There you will find explanations of all the commands and their parameters.
-* For API examples of all pdfcpu operations please refer to [GoDoc](https://pkg.go.dev/github.com/pdfcpu/pdfcpu/pkg/api).
+* For API examples of all pdfcpu operations please refer to [GoDoc](https://pkg.go.dev/github.com/vharish836/pdfcpu/pkg/api).
 
 ### GoDoc
 
-* [pdfcpu package](https://pkg.go.dev/github.com/pdfcpu/pdfcpu)
-* [pdfcpu API](https://pkg.go.dev/github.com/pdfcpu/pdfcpu/pkg/api)
-* [pdfcpu CLI](https://pkg.go.dev/github.com/pdfcpu/pdfcpu/pkg/cli)
+* [pdfcpu package](https://pkg.go.dev/github.com/vharish836/pdfcpu)
+* [pdfcpu API](https://pkg.go.dev/github.com/vharish836/pdfcpu/pkg/api)
+* [pdfcpu CLI](https://pkg.go.dev/github.com/vharish836/pdfcpu/pkg/cli)
 
 ## Reminder
 
@@ -93,7 +93,7 @@ The main focus lies on strong support for batch processing and scripting via a r
 ## Installation
 
 ### Download
-Get the latest binary [here](https://github.com/pdfcpu/pdfcpu/releases).
+Get the latest binary [here](https://github.com/vharish836/pdfcpu/releases).
 
 
 ### Using GOPATH
@@ -101,8 +101,8 @@ Get the latest binary [here](https://github.com/pdfcpu/pdfcpu/releases).
 Required go version for building: go1.15 and up
 
 ```
-go get github.com/pdfcpu/pdfcpu/cmd/...
-cd $GOPATH/src/github.com/pdfcpu/pdfcpu/cmd/pdfcpu
+go get github.com/vharish836/pdfcpu/cmd/...
+cd $GOPATH/src/github.com/vharish836/pdfcpu/cmd/pdfcpu
 go install
 pdfcpu version
 ```
@@ -110,7 +110,7 @@ pdfcpu version
 ### Using Go Modules
 
 ```
-git clone https://github.com/pdfcpu/pdfcpu
+git clone https://github.com/vharish836/pdfcpu
 cd pdfcpu/cmd/pdfcpu
 go install
 pdfcpu version

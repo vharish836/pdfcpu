@@ -21,9 +21,9 @@ import (
 	"os"
 	"time"
 
-	"github.com/pdfcpu/pdfcpu/pkg/log"
-	"github.com/pdfcpu/pdfcpu/pkg/pdfcpu"
 	"github.com/pkg/errors"
+	"github.com/vharish836/pdfcpu/pkg/log"
+	"github.com/vharish836/pdfcpu/pkg/pdfcpu"
 )
 
 // ListPermissions returns a list of user access permissions.

@@ -23,8 +23,8 @@ import (
 	_ "image/jpeg"
 	_ "image/png"
 
-	"github.com/pdfcpu/pdfcpu/pkg/filter"
 	"github.com/pkg/errors"
+	"github.com/vharish836/pdfcpu/pkg/filter"
 )
 
 func createSMaskObject(xRefTable *XRefTable, buf []byte, w, h, bpc int) (*IndirectRef, error) {

@@ -24,11 +24,11 @@ import (
 	"strings"
 	"unicode/utf8"
 
-	"github.com/pdfcpu/pdfcpu/pkg/font"
-	"github.com/pdfcpu/pdfcpu/pkg/log"
-	"github.com/pdfcpu/pdfcpu/pkg/pdfcpu"
-	pdf "github.com/pdfcpu/pdfcpu/pkg/pdfcpu"
 	"github.com/pkg/errors"
+	"github.com/vharish836/pdfcpu/pkg/font"
+	"github.com/vharish836/pdfcpu/pkg/log"
+	"github.com/vharish836/pdfcpu/pkg/pdfcpu"
+	pdf "github.com/vharish836/pdfcpu/pkg/pdfcpu"
 )
 
 func isSupportedFontFile(filename string) bool {

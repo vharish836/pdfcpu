@@ -17,8 +17,8 @@
 package api
 
 import (
-	"github.com/pdfcpu/pdfcpu/pkg/pdfcpu"
 	"github.com/pkg/errors"
+	"github.com/vharish836/pdfcpu/pkg/pdfcpu"
 )
 
 // EncryptFile encrypts inFile and writes the result to outFile.

@@ -17,8 +17,8 @@ limitations under the License.
 package pdfcpu
 
 import (
-	"github.com/pdfcpu/pdfcpu/pkg/filter"
 	"github.com/pkg/errors"
+	"github.com/vharish836/pdfcpu/pkg/filter"
 )
 
 // PageContent returns the content in PDF syntax for page dict d.

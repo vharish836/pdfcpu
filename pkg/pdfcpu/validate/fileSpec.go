@@ -19,8 +19,8 @@ package validate
 import (
 	"net/url"
 
-	pdf "github.com/pdfcpu/pdfcpu/pkg/pdfcpu"
 	"github.com/pkg/errors"
+	pdf "github.com/vharish836/pdfcpu/pkg/pdfcpu"
 )
 
 // See 7.11.4

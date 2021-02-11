@@ -18,9 +18,9 @@ limitations under the License.
 package cli
 
 import (
-	"github.com/pdfcpu/pdfcpu/pkg/api"
-	"github.com/pdfcpu/pdfcpu/pkg/pdfcpu"
 	"github.com/pkg/errors"
+	"github.com/vharish836/pdfcpu/pkg/api"
+	"github.com/vharish836/pdfcpu/pkg/pdfcpu"
 )
 
 // Validate inFile against ISO-32000-1:2008.

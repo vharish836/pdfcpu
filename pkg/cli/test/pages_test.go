@@ -20,8 +20,8 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/pdfcpu/pdfcpu/pkg/api"
-	"github.com/pdfcpu/pdfcpu/pkg/cli"
+	"github.com/vharish836/pdfcpu/pkg/api"
+	"github.com/vharish836/pdfcpu/pkg/cli"
 )
 
 func TestPagesCommand(t *testing.T) {

@@ -23,9 +23,9 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/pdfcpu/pdfcpu/pkg/log"
-	pdf "github.com/pdfcpu/pdfcpu/pkg/pdfcpu"
 	"github.com/pkg/errors"
+	"github.com/vharish836/pdfcpu/pkg/log"
+	pdf "github.com/vharish836/pdfcpu/pkg/pdfcpu"
 )
 
 var (

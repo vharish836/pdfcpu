@@ -17,8 +17,8 @@ limitations under the License.
 package cli
 
 import (
-	"github.com/pdfcpu/pdfcpu/pkg/pdfcpu"
 	"github.com/pkg/errors"
+	"github.com/vharish836/pdfcpu/pkg/pdfcpu"
 )
 
 // Process executes a pdfcpu command.

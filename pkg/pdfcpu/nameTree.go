@@ -20,7 +20,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/pdfcpu/pdfcpu/pkg/log"
+	"github.com/vharish836/pdfcpu/pkg/log"
 )
 
 const maxEntries = 3

@@ -17,9 +17,9 @@ limitations under the License.
 package validate
 
 import (
-	"github.com/pdfcpu/pdfcpu/pkg/log"
-	pdf "github.com/pdfcpu/pdfcpu/pkg/pdfcpu"
 	"github.com/pkg/errors"
+	"github.com/vharish836/pdfcpu/pkg/log"
+	pdf "github.com/vharish836/pdfcpu/pkg/pdfcpu"
 )
 
 func validateStandardType1Font(s string) bool {

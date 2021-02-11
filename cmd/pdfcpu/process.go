@@ -25,11 +25,11 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/pdfcpu/pdfcpu/pkg/api"
-	"github.com/pdfcpu/pdfcpu/pkg/cli"
-	"github.com/pdfcpu/pdfcpu/pkg/pdfcpu"
-	"github.com/pdfcpu/pdfcpu/pkg/pdfcpu/validate"
 	"github.com/pkg/errors"
+	"github.com/vharish836/pdfcpu/pkg/api"
+	"github.com/vharish836/pdfcpu/pkg/cli"
+	"github.com/vharish836/pdfcpu/pkg/pdfcpu"
+	"github.com/vharish836/pdfcpu/pkg/pdfcpu/validate"
 )
 
 func hasPdfExtension(filename string) bool {

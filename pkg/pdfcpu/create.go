@@ -24,8 +24,8 @@ import (
 	"strings"
 	"unicode/utf8"
 
-	"github.com/pdfcpu/pdfcpu/pkg/font"
-	"github.com/pdfcpu/pdfcpu/pkg/types"
+	"github.com/vharish836/pdfcpu/pkg/font"
+	"github.com/vharish836/pdfcpu/pkg/types"
 )
 
 // HAlignment represents the horizontal alignment of text.

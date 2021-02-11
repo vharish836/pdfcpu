@@ -23,9 +23,9 @@ import (
 	"io"
 	"io/ioutil"
 
-	"github.com/pdfcpu/pdfcpu/pkg/filter"
-	"github.com/pdfcpu/pdfcpu/pkg/log"
 	"github.com/pkg/errors"
+	"github.com/vharish836/pdfcpu/pkg/filter"
+	"github.com/vharish836/pdfcpu/pkg/log"
 )
 
 // PDFFilter represents a PDF stream filter object.

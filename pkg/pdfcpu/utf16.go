@@ -24,8 +24,8 @@ import (
 
 	"strings"
 
-	"github.com/pdfcpu/pdfcpu/pkg/log"
 	"github.com/pkg/errors"
+	"github.com/vharish836/pdfcpu/pkg/log"
 )
 
 // ErrInvalidUTF16BE represents an error that gets raised for invalid UTF-16BE byte sequences.
