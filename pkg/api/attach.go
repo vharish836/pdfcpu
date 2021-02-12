@@ -80,6 +80,45 @@ func ListAttachmentsFile(inFile string, conf *pdfcpu.Configuration) ([]string, e
 	return ListAttachments(f, conf)
 }
 
+// AddAttachmentObject embeds contents of given attchment object into a PDF context read from rs and writes the result to w.
+func AddAttachmentObject(rs io.ReadSeeker, w io.Writer, a pdfcpu.Attachment, conf *pdfcpu.Configuration) error {
+	if rs == nil {
+		return errors.New("pdfcpu: AddAttachmentObject: Please provide rs")
+	}
+	if w == nil {
+		return errors.New("pdfcpu: AddAttachmentObject: Please provide w")
+	}
+	if conf == nil {
+		conf = pdfcpu.NewDefaultConfiguration()
+	}
+
+	fromStart := time.Now()
+	ctx, durRead, durVal, durOpt, err := readValidateAndOptimize(rs, conf, fromStart)
+	if err != nil {
+		return err
+	}
+
+	from := time.Now()
+	log.CLI.Printf("adding %s\n", a.FileName)
+
+	if err = ctx.AddAttachment(a, false); err != nil {
+		return err
+	}
+
+	durAdd := time.Since(from).Seconds()
+	fromWrite := time.Now()
+
+	if err = WriteContext(ctx, w); err != nil {
+		return err
+	}
+
+	durWrite := durAdd + time.Since(fromWrite).Seconds()
+	durTotal := time.Since(fromStart).Seconds()
+	logOperationStats(ctx, "add attachment object, write", durRead, durVal, durOpt, durWrite, durTotal)
+
+	return nil
+}
+
 // AddAttachments embeds files into a PDF context read from rs and writes the result to w.
 // file is either a file name or a file name and a description separated by a comma.
 func AddAttachments(rs io.ReadSeeker, w io.Writer, files []string, coll bool, conf *pdfcpu.Configuration) error {
