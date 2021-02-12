@@ -2504,7 +2504,11 @@ func handlePermissions(ctx *Context) error {
 
 	// Double check minimum permissions for pdfcpu processing.
 	if !hasNeededPermissions(ctx.Cmd, ctx.E) {
-		return errors.New("pdfcpu: insufficient access permissions")
+		if ctx.Permissions == PermissionsAll {
+			log.Read.Println("handlePermissions: do not have enough permissions, but still proceeding as per configuration")
+		} else {
+			return errors.New("pdfcpu: insufficient access permissions")
+		}
 	}
 
 	return nil
